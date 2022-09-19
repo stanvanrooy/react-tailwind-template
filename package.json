@@ -1,0 +1,25 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "esbuild src/app.tsx --bundle --serve=8001 --servedir=www/ --outdir=www/js",
+    "build": "esbuild src/app.tsx --bundle --minify --outdir=www/js"
+  },
+  "author": "Stan van Rooy",
+  "license": "ISC",
+  "dependencies": {
+    "@elfsquad/authentication": "^2.0.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.3.0",
+    "react-simple-snackbar": "^1.1.11"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.19",
+    "@types/react-dom": "^18.0.6",
+    "esbuild": "^0.15.7",
+    "esbuild-css-modules-plugin": "^2.5.2"
+  }
+}
